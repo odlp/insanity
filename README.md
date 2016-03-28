@@ -1,4 +1,4 @@
-# Insanity
+# Insanity [![Build Status](https://travis-ci.org/odlp/insanity.svg?branch=master)](https://travis-ci.org/odlp/insanity)
 
 Run a command repeatedly to check for differences. Handy for discovering flaky tests or verifying a change doesn't lead to instability.
 
@@ -31,7 +31,7 @@ Install the gem directly:
 gem install insanity
 ```
 
-Don't forget to run `rebenv rehash` if you use Rbenv.
+Don't forget to run `rbenv rehash` if you use Rbenv.
 
 Alternatively add the following to your Gemfile:
 
