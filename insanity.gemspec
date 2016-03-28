@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["oliverp@gmail.com"]
 
   spec.summary       = "Run a command repeatedly to check for differences."
-  spec.description   = "Handy for discovering flaky tests or verifying a change doesn't lead to instability."
+  spec.description   = "Run a command repeatedly to check for differences. Handy for discovering flaky tests or verifying a change doesn't lead to instability."
   spec.homepage      = "https://github.com/odlp/insanity"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
