@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require 'insanity'
+require 'optparse'
+
+options = {iterations: 100}
+
+parser = OptionParser.new do|opts|
+	opts.banner = "Usage: insanity [options] 'your command'"
+
+	opts.on('-i N', '--iterations N', OptionParser::DecimalInteger, 'Number of iterations') do |iterations|
+		options[:iterations] = iterations
+	end
+
+	opts.on('-h', '--help', 'Displays Help') do
+		puts opts
+		exit
+	end
+end
+
+parser.parse!
+command = ARGF.argv[0]
+
+Insanity::Runner
+  .new(command: command, iterations: options[:iterations])
+  .commence!
