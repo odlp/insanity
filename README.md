@@ -28,8 +28,8 @@ Status 1	| 2 times
 
 ### Command options
 
-- `-i 99` / `--iterations 99` = how many times to run the command. Default: 100.
-- `-o ./tmp` / `--output-dir ./tmp` = save the combined stdout & stderr of each iteration to a file. Default: No output saved.
+- `-i 99` / `--iterations 99`: Number of many times to run the command. Default: 100.
+- `-o ./tmp` / `--output-dir ./tmp`: Save output in this directory. Each iteration is written to an individual file (combined stdout & stderr). Default: No output saved.
 
 ## Installation
 
