@@ -12,6 +12,10 @@ parser = OptionParser.new do|opts|
 		options[:iterations] = iterations
 	end
 
+  opts.on('-o PATH', '--output-dir PATH', 'Path to save the output of each iteration') do |output_dir|
+		options[:output_dir] = output_dir
+	end
+
 	opts.on('-h', '--help', 'Displays Help') do
 		puts opts
 		exit
@@ -22,5 +26,5 @@ parser.parse!
 command = ARGF.argv[0]
 
 Insanity::Runner
-  .new(command: command, iterations: options[:iterations])
+  .new(command: command, options: options)
   .commence!

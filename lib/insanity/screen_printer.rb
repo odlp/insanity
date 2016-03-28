@@ -1,5 +1,5 @@
 module Insanity
-  class Printer
+  class ScreenPrinter
     def update_progress(status)
       if status.success?
         print green_dot
