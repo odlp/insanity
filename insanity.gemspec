@@ -7,7 +7,6 @@ Gem::Specification.new do |spec|
   spec.name          = "insanity"
   spec.version       = Insanity::VERSION
   spec.authors       = ["odlp"]
-  spec.email         = ["oliverp@gmail.com"]
 
   spec.summary       = "Run a command repeatedly to check for differences."
   spec.description   = "Run a command repeatedly to check for differences. Handy for discovering flaky tests or verifying a change doesn't lead to instability."
