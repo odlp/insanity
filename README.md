@@ -51,4 +51,4 @@ And run `bundle install`.
 
 ## Development notes
 
-- `rake` runs the [Aruba](https://github.com/cucumber/aruba/) and [RSpec](http://rspec.info/) tests
+- `rake` runs the [RSpec](http://rspec.info/) tests
